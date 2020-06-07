@@ -1,0 +1,34 @@
+//-------------------------
+//----------------VARIABLES
+//-------------------------
+
+//-----COLORS
+$c-black           : #000;
+$c-white           : #fff;
+$c-text            : #231f20;
+
+
+
+//-----PATHS
+$localFontBase: "/themes/note/assets/fonts/";
+$imgBaseUrl   : "/images/";
+
+
+//------DIMENSIONS
+$baseFontSize: 10;
+$fullWidth: 100%;
+$fullHeight: 100%;
+
+//------FONT
+$fontDefault: Arial, Helvetica, Tahoma, sans-serif;
+$baseFont: 'Montserrat', sans-serif;
+
+
+
+
+//------MEDIA QUERIES
+$desktop--Large  : 1700px;
+$desktop         : 1440px;
+$tablet          : 860px;
+$mobile			 : 767px;
+

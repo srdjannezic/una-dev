@@ -1,0 +1,30 @@
+fields:
+    images:
+        label: 'Slider Images'
+        prompt: 'Add new item'
+        span: full
+        type: repeater
+        form:
+            fields:
+                image:
+                    label: Image
+                    mode: file
+                    span: auto
+                    type: mediafinder
+    sections:
+        label: Sections
+        prompt: 'Add new item'
+        span: full
+        type: repeater
+        form:
+            fields:
+                text:
+                    label: 'Section Text'
+                    size: ''
+                    span: auto
+                    type: richeditor
+                image:
+                    label: Image
+                    mode: file
+                    span: auto
+                    type: mediafinder

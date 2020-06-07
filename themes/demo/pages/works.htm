@@ -1,0 +1,30 @@
+title = "Works"
+url = "/works"
+layout = "default"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 9
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = 404
+postPage = "work"
+==
+{% component 'blogPosts' %}
+<div class="row blog-bottom">
+    <nav aria-label="pagination">
+        <ul class="pagination pagination-lg pg-blue">
+            <!--Arrow right-->
+            
+            <li class="page-item">
+                <a class="load-more" href="?page=2" aria-label="Next">
+                    Load More
+                </a>
+            <div class="blog-loader hide"><img src="{{ url('/themes/morph/assets/javascript/spinner.gif') }}" width="70"/></div> 
+            </li>
+
+            
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,22 @@
+title = "Work"
+url = "/work/:slug"
+layout = "default"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = 404
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 12
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = 404
+postPage = "work"
+==
+{% component 'blogPost' %}
+<div class="work-related">
+	<h3>Other works</h3>
+	{% component 'blogPosts' %}
+</div>

@@ -1,0 +1,34 @@
+//-------------------------
+//----------- HERO
+//-------------------------
+
+.hero-slider {
+	.img-wrapper {
+		margin: 0 30px;
+		@include breakpoint(desktop--small) {
+			margin: 0 15px;
+		}
+		@include breakpoint(mobile) {
+			position: relative;
+			height: 55rem;
+			overflow: hidden;
+			img {
+				@include absolute(center);
+				width: auto;
+				height: 100%;
+			}
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		// &:nth-child(2n) {
+		// 	margin-right: 0;
+		// }
+	}
+	.slick-list {
+	    margin: 0 -30px;
+		@include breakpoint(desktop--small) {
+			margin: 0 -15px;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+name: Homepage
+modelClass: Wollson\Homepage\Models\HomePage
+form: $/wollson/homepage/models/homepage/fields.yaml
+defaultRedirect: wollson/homepage/homepage
+create:
+    redirect: 'wollson/homepage/homepage/update/:id'
+    redirectClose: wollson/homepage/homepage
+update:
+    redirect: wollson/homepage/homepage
+    redirectClose: wollson/homepage/homepage
+preview: {  }

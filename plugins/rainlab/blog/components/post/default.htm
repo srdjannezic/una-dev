@@ -1,0 +1,31 @@
+{% set post = __SELF__.post %}
+
+{% set image_class = '' %}
+
+{% if post.featured_images.count <= 1 %}
+	{% set image_class = 'full' %}
+{% endif %}
+<div class="work-single">
+	<div class="work-single__title">{{ post.content_html|raw }}</div>
+	<div class="work-single__content {{ image_class }}">
+		<div class="main-img img-wrapper">
+			<img src="{{ post.featured_images[0].getPath }}" />
+		</div>
+		{% if post.featured_images.count > 1 %}
+			<div class="work-single__side">
+				<div class="featured-images text-center small-img">
+					{% for image in post.featured_images %}
+						<div class="img-wrapper">
+							<img
+								data-src="{{ image.filename }}"
+								src="{{ image.path }}"
+								alt="{{ image.description }}" />
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		{% endif %}
+	</div>
+</div>
+
+

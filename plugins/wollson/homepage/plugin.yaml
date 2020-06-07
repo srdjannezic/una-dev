@@ -1,0 +1,11 @@
+plugin:
+    name: 'wollson.homepage::lang.plugin.name'
+    description: 'wollson.homepage::lang.plugin.description'
+    author: Wollson
+    icon: oc-icon-file-o
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Homepage
+        url: /wollson/homepage/homepage/update/1
+        icon: icon-file-o

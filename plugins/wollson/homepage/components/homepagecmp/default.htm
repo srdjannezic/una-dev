@@ -1,0 +1,25 @@
+{% set img_path = '/storage/app/media/' %}
+<section class="slick-init hero-slider" id="home-carousel">
+{% for image in home.images %}
+	{% set img_pathx = img_path ~ image.image %}
+	<div class="img-wrapper">
+		<img src="{{ url(img_pathx) }}" />
+	</div>
+{% endfor %}
+</section>
+
+<section class="biography">
+	{% for section in home.sections %}
+		<div class="row">
+			<div class="left">
+				{{ section.text |raw }}
+			</div>
+			<div class="right">
+				{% set img_path_new = img_path ~ section.image %}
+				<div class="img-wrapper">
+					<img src="{{ url(img_path_new) }}" />
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+</section>

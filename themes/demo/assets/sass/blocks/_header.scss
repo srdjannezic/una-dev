@@ -1,0 +1,41 @@
+//-------------------------
+//----------- HEADER
+//-------------------------
+
+.header {
+	@extend %clearfix;
+	padding: 42px 0 42px;
+	@include breakpoint(mobile) {
+		padding: 30px 0 30px;
+	}
+	&__logo {
+		float: left;
+		h1 {
+			font-size: 40px;
+			font-weight: 700;
+			letter-spacing: -1px;
+			color: #231f20;
+			@include breakpoint(desktop--small) {
+				font-size: 30px;
+			}
+			@include breakpoint(mobile) {
+				font-size: 24px;
+			}
+		}
+	}
+	&__nav {
+		float: right;
+		a {
+			font-size: 36px;
+			font-weight: 300;
+			letter-spacing: -0.9px;
+			color: #231f20;
+			@include breakpoint(desktop--small) {
+				font-size: 26px;
+			}
+			@include breakpoint(mobile) {
+				font-size: 22px;
+			}
+		}
+	}
+}
